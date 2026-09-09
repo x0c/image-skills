@@ -33,19 +33,7 @@
 
 ### Quick Install
 
-**Claude Code:**
-
-```bash
-git clone https://github.com/x0c/image-assets-skill.git ~/.claude/skills/image-assets
-```
-
-**Codex CLI:**
-
-```bash
-git clone https://github.com/x0c/image-assets-skill.git ~/.codex/skills/image-assets
-```
-
-Restart your agent. The entry point is `SKILL.md`; `agents/openai.yaml` provides the Codex-specific interface metadata.
+Follow the [current installation and migration instructions](../README.md#install). This skill is distributed from `x0c/image-skills`, not the archived standalone repository.
 
 ### Usage
 
@@ -130,19 +118,7 @@ Run `python scripts/image_assets_cli.py --help` for the full command list. See `
 
 ### 快速安装
 
-**Claude Code:**
-
-```bash
-git clone https://github.com/x0c/image-assets-skill.git ~/.claude/skills/image-assets
-```
-
-**Codex CLI:**
-
-```bash
-git clone https://github.com/x0c/image-assets-skill.git ~/.codex/skills/image-assets
-```
-
-重启 Agent 即可。入口是 `SKILL.md`；`agents/openai.yaml` 提供 Codex 侧的接口元数据。
+请按[当前安装和迁移说明](../README.zh-CN.md#安装)操作。此技能从 `x0c/image-skills` 分发，旧独立仓库已归档。
 
 ### 用法
 
