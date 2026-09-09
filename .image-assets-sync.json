@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "files": {
+    "SKILL.md": "57764d1c295620cd3fefaeac4591c129755d4872ae529f20e289e666dc895196",
+    "tests/test_grid_gif.py": "2b99f0103f1f0748a45c7e861c470c43a4809aa94e548ce20142c221ac609874",
+    "references/sprite-sheet-gif.md": "966a1b50d380807cb5d2e44da11ee37662adca8ef6ca4e7d5182197863712734",
+    "references/environment.md": "00f9e973a0889d4dd06c25da5e2b4658938735c08bdb15672d9c7494845d1e6c",
+    "references/apple-native-assets.md": "9e0a46d003ef3a03471a95a93cd8f20b408370d1de1770a7c2f6304b24591026",
+    "scripts/cutout_images.py": "cd7290d6e3b7e6dbc13daf5355699ead1123810b5f2a0c24ebff9434e4f27e3c",
+    "scripts/image_assets.mjs": "1a8ca405514f8b19fc4998682bb2c2945dfe93bea404f4e2ad628f2ced6d7875",
+    "scripts/_env.py": "3a78d1de990968e795018e86fd166853b2e3ba028db8c25cba96cc80c5fc9a23",
+    "scripts/image_assets_cli.py": "68bf12f9a6e61090d2389f686ebf6205186116e6f93d87342bf6e3d666d0a9f2",
+    "scripts/compare_cutouts.py": "de07a560f518c43205bcc81565b7eddace7309026f5c5da4db3d017ba67fb9e8",
+    "scripts/grid_gif.py": "6ba3f9c7d2fd7843f55dd3f3ef9bb241bd64ae35426a6c7ae2ec66fef55ea7b9",
+    "agents/openai.yaml": "7839fe1fa48e8ace445c7cbabe5e7176ec52e51fd2dcb9b381f675e26bb51177"
+  }
+}
