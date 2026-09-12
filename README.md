@@ -1,10 +1,28 @@
-English | [简体中文](README.zh-CN.md)
+**Languages:** English | [简体中文](README.zh-CN.md)
 
 # image-skills
 
-Prepare final image assets for Claude Code and Codex: background removal, transparent PNGs, resizing, compression, format conversion, sprite-sheet splitting, and aligned GIF output.
+Remove image backgrounds to transparent PNG, resize and compress app assets, and convert sprite sheets to aligned GIFs for **Claude Code** and **Codex** — generate the picture with your image tool, then finish the asset here.
 
-**This is the maintained successor to image-assets-skill.** The skill is still named `image-assets` and lives in the `image-assets/` subdirectory. The old repository is retained as a migration landing page.
+This is a skill (not a hosted API). It does not redistribute Codex’s bundled imagegen skill. Cutout, resize, sprite-sheet split, and GIF encoding are deterministic image processing.
+
+**Maintained successor to [image-assets-skill](https://github.com/x0c/image-assets-skill).** The skill is still named `image-assets` and lives in `image-assets/`. The old repository is an archived landing page.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## What it does
+
+- **Remove background → transparent PNG** (solid-color keying, or model cutouts)
+- **Resize, compress, convert** PNG / WebP / AVIF / JPEG
+- **Sprite sheet → aligned animated GIF** (N-grid split, feet-anchor, ping-pong)
+- **App icon size sets** from one source image
+
+Ask the assistant to process an image after install, or read the [full commands](image-assets/README.md).
+
+```sh
+python3 image-assets/scripts/image_assets_cli.py app-transparent \
+  --input ./photos --output ./cutouts
+```
 
 ## Install
 
@@ -21,12 +39,12 @@ Installation stops if the destination already exists, preserving local changes. 
 
 ## Usage and dependencies
 
-Ask your assistant to process an image, or read the [full capabilities and commands](image-assets/README.md). Solid-color frame processing requires Python; compression/conversion also needs Node.js; model cutouts install large model dependencies. RMBG-2.0 has access and commercial-license restrictions detailed in the full guide. Never upload access tokens.
+Solid-color frame processing needs Python; compression/conversion also needs Node.js; model cutouts install large local model dependencies on first use. **RMBG-2.0** is free for non-commercial use only (commercial use needs a BRIA license); **BiRefNet** is free including commercial use. Never upload access tokens.
 
-Use an image-generation tool for source visuals, then image-assets for deterministic processing. This repository does not redistribute Codex's bundled imagegen skill. Skill execution instructions are currently primarily in Chinese.
+Skill execution instructions are currently primarily in Chinese.
 
 ## Feedback and license
 
-Report problems in the [current repository's Issues](https://github.com/x0c/image-skills/issues), with redacted errors and a minimal example.
+Report problems in this repository’s [Issues](https://github.com/x0c/image-skills/issues), with redacted errors and a minimal example.
 
 [MIT](LICENSE); model licenses apply separately.

@@ -1,10 +1,28 @@
-[English](README.md) | 简体中文
+**语言：** [English](README.md) | 简体中文
 
 # image-skills
 
-为 Claude Code 和 Codex 准备最终图像素材：抠图、透明 PNG、缩放、压缩、格式转换，以及精灵表切帧和 GIF 对齐。
+为 **Claude Code** 和 **Codex** 抠图成透明 PNG、缩放压缩应用素材、把精灵表转成对齐的 GIF——用你的生图工具出图，再在这里做可交付资产。
 
-**这是 image-assets-skill 的后续维护仓库。** 技能名称仍为 `image-assets`，位于本仓库的 `image-assets/` 子目录。旧仓库仅保留迁移入口。
+这是技能，不是在线抠图服务。不分发 Codex 内置 imagegen。抠图、缩放、切帧和 GIF 编码都是确定性图像处理。
+
+**这是 [image-assets-skill](https://github.com/x0c/image-assets-skill) 的后续维护仓库。** 技能名称仍为 `image-assets`，位于 `image-assets/`。旧仓库仅作归档入口。
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## 能做什么
+
+- **抠图 → 透明 PNG**（纯色键控，或模型分割）
+- **缩放、压缩、转码** PNG / WebP / AVIF / JPEG
+- **精灵表 → 对齐的动画 GIF**（N 宫格切帧、脚部锚点、往返播放）
+- **应用图标多尺寸** 从一张源图导出
+
+装好后请助手处理图片，或阅读 [完整命令](image-assets/README.md)。
+
+```sh
+python3 image-assets/scripts/image_assets_cli.py app-transparent \
+  --input ./photos --output ./cutouts
+```
 
 ## 安装
 
@@ -21,12 +39,12 @@ Windows PowerShell 将 `python3` 换为 `py -3`。Codex 用户将命令中的 `.
 
 ## 用法和依赖
 
-安装后请助手处理图片，或阅读 [完整能力与命令](image-assets/README.md)。纯色切帧需要 Python；压缩转换额外需要 Node.js；模型抠图会安装较大的模型依赖。RMBG-2.0 有访问与商用授权限制，详见完整说明；不要上传访问令牌。
+纯色切帧需要 Python；压缩转换额外需要 Node.js；模型抠图会在首次使用时安装较大的本地模型依赖。**RMBG-2.0** 免费仅限非商业（商用需向 BRIA 购买授权）；**BiRefNet** 完全开放，含商用。不要上传访问令牌。
 
-图像生成工具负责生成或编辑源素材，image-assets 负责后续确定性处理。本仓库不分发 Codex 内置 imagegen 技能。技能执行正文目前主要为中文。
+技能执行正文目前主要为中文。
 
 ## 反馈与许可证
 
-请在[当前仓库 Issues](https://github.com/x0c/image-skills/issues)反馈，附脱敏后的错误和最小样例。
+请在本仓库 [Issues](https://github.com/x0c/image-skills/issues) 反馈，附脱敏后的错误和最小样例。
 
 [MIT](LICENSE)；模型许可独立适用。
