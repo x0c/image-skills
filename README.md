@@ -13,12 +13,12 @@ This is a skill (not a hosted API). It does not redistribute Codex’s bundled i
 
 ## What it does
 
-- **Remove background → transparent PNG** (solid-color keying, or model cutouts)
+- **Remove background → transparent PNG** (solid-color keying or model-based cutout)
 - **Resize, compress, convert** PNG / WebP / AVIF / JPEG
-- **Sprite sheet → aligned animated GIF** (N-grid split, feet-anchor, ping-pong)
-- **App icon size sets** from one source image
+- **Sprite sheet → aligned animated GIF** (N-grid split, feet-anchored, ping-pong)
+- **App icon sets** from one source image
 
-Ask the assistant to process an image after install, or read the [full commands](image-assets/README.md).
+Ask the assistant to process an image after install, or see the [full commands](image-assets/README.md).
 
 ```sh
 python3 image-assets/scripts/image_assets_cli.py app-transparent \

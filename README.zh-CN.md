@@ -2,7 +2,7 @@
 
 # image-skills
 
-为 **Claude Code** 和 **Codex** 抠图成透明 PNG、缩放压缩应用素材、把精灵表转成对齐的 GIF——用你的生图工具出图，再在这里做可交付资产。
+帮 **Claude Code** 和 **Codex** 把图片抠成透明 PNG、缩放压缩应用素材、把精灵表转成对齐的 GIF——用你常用的模型出原图，再在这里加工成可交付的成品。
 
 这是技能，不是在线抠图服务。不分发 Codex 内置 imagegen。抠图、缩放、切帧和 GIF 编码都是确定性图像处理。
 
@@ -16,9 +16,9 @@
 - **抠图 → 透明 PNG**（纯色键控，或模型分割）
 - **缩放、压缩、转码** PNG / WebP / AVIF / JPEG
 - **精灵表 → 对齐的动画 GIF**（N 宫格切帧、脚部锚点、往返播放）
-- **应用图标多尺寸** 从一张源图导出
+- **应用图标多尺寸**：从一张源图导出
 
-装好后请助手处理图片，或阅读 [完整命令](image-assets/README.md)。
+装好后请助手处理图片，或查看[完整命令](image-assets/README.md)用法。
 
 ```sh
 python3 image-assets/scripts/image_assets_cli.py app-transparent \
