@@ -2,7 +2,7 @@
 
 # image-skills
 
-Remove image backgrounds to transparent PNG, resize and compress app assets, and convert sprite sheets to aligned GIFs for **Claude Code** and **Codex** — generate the picture with your image tool, then finish the asset here.
+Remove image backgrounds to transparent PNG, resize and compress app assets, and convert sprite sheets to aligned GIFs for **Claude Code** and **Codex** — generate the raw image with your favorite model, then turn it into a production-ready asset here.
 
 This is a skill (not a hosted API). It does not redistribute Codex’s bundled imagegen skill. Cutout, resize, sprite-sheet split, and GIF encoding are deterministic image processing.
 
@@ -33,7 +33,7 @@ Requires Node.js (for the `skills` CLI) and Python 3 (for the image processing h
 npx skills add x0c/image-skills -g
 ```
 
-This installs the `image-assets` skill to every detected agent host. Restart your assistant.
+This installs the `image-assets` skill across all detected coding agents. Start a new session (or restart your agent) to load it.
 
 If you use [agentsync](https://github.com/x0c/agentsync), maintain its canonical skill source instead of replacing shared tool-side links.
 
@@ -50,9 +50,9 @@ If you run multiple AI coding agents daily, check out the rest of the local-firs
 
 ## Usage and dependencies
 
-Solid-color frame processing needs Python; compression/conversion also needs Node.js; model cutouts install large local model dependencies on first use. **RMBG-2.0** is free for non-commercial use only (commercial use needs a BRIA license); **BiRefNet** is free including commercial use. Never upload access tokens.
+Solid-color frame processing needs Python; compression/conversion also needs Node.js; AI cutout models download their local weights on first run. **RMBG-2.0** is free for non-commercial use only (commercial use needs a BRIA license); **BiRefNet** is free including commercial use. Never upload access tokens.
 
-Skill execution instructions are currently primarily in Chinese.
+Note: The internal skill prompts (`SKILL.md`) are currently written in Chinese.
 
 ## Feedback and license
 
