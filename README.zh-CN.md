@@ -33,7 +33,7 @@ python3 image-assets/scripts/image_assets_cli.py app-transparent \
 npx skills add x0c/image-skills -g
 ```
 
-一次把 `image-assets` 技能装到所有已识别的助手宿主。重启助手。
+一次把 `image-assets` 技能装到所有已识别的编程助手。新开会话（或重启 agent）以加载技能。
 
 使用 [agentsync](https://github.com/x0c/agentsync) 的用户应维护统一技能源，不要复制覆盖工具侧的共享链接。
 
@@ -50,9 +50,9 @@ npx skills add x0c/image-skills -g
 
 ## 用法和依赖
 
-纯色切帧需要 Python；压缩转换额外需要 Node.js；模型抠图会在首次使用时安装较大的本地模型依赖。**RMBG-2.0** 免费仅限非商业（商用需向 BRIA 购买授权）；**BiRefNet** 完全开放，含商用。不要上传访问令牌。
+纯色切帧需要 Python；压缩转换额外需要 Node.js；AI 抠图模型会在首次运行时下载本地权重。**RMBG-2.0** 免费仅限非商业（商用需向 BRIA 购买授权）；**BiRefNet** 完全开放，含商用。不要上传访问令牌。
 
-技能执行正文目前主要为中文。
+注：内部技能提示词（`SKILL.md`）目前为中文。
 
 ## 反馈与许可证
 
