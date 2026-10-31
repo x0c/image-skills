@@ -35,7 +35,18 @@ npx skills add x0c/image-skills -g
 
 一次把 `image-assets` 技能装到所有已识别的助手宿主。重启助手。
 
-使用 agentsync 的用户应维护统一技能源，不要复制覆盖工具侧的共享链接。
+使用 [agentsync](https://github.com/x0c/agentsync) 的用户应维护统一技能源，不要复制覆盖工具侧的共享链接。
+
+## 🧩 AI 编程工具链里的相关工具
+
+如果你每天在多个 AI 编程助手之间切换，看看这套本地优先工具链的其余部分：
+
+| 仓库 | 说明 |
+| :--- | :--- |
+| **[corral](https://github.com/corral-dev/corral)** | 在终端会话管理器里并排跑 Claude Code、Codex、OpenCode、Cursor 和 Pi，再从 iPhone 或 Mac 上继续。 |
+| **[subswap](https://github.com/x0c/subswap)** | 查剩余额度，一键切换 Claude Code、Codex、Cursor、Kimi Code 和 OpenCode 的账号，不用反复登录。 |
+| **[agentsync](https://github.com/x0c/agentsync)** | 以一份本地源统一同步 `AGENTS.md`、`CLAUDE.md`、skills 和 MCP 配置到各编程助手。 |
+| **[agent-doc-skills](https://github.com/x0c/agent-doc-skills)** | 可导航的项目知识库 skills（`doc-init`、`doc-update`、`doc-compact`），让 coding agent 不再每个会话都重新认识你的仓库。 |
 
 ## 用法和依赖
 
