@@ -9,6 +9,7 @@ This is a skill (not a hosted API). It does not redistribute Codex’s bundled i
 **Maintained successor to [image-assets-skill](https://github.com/x0c/image-assets-skill).** The skill is still named `image-assets` and lives in `image-assets/`. The old repository is an archived landing page.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![skills.sh](https://skills.sh/b/x0c/image-skills)](https://skills.sh/x0c/image-skills)
 
 ## What it does
 
@@ -26,16 +27,15 @@ python3 image-assets/scripts/image_assets_cli.py app-transparent \
 
 ## Install
 
-Requires Git and Python 3. Run in a directory without an existing `image-skills` folder:
+Requires Node.js (for the `skills` CLI) and Python 3 (for the image processing helpers):
 
 ```sh
-git clone https://github.com/x0c/image-skills.git
-python3 -c "from pathlib import Path; import shutil; shutil.copytree('image-skills/image-assets', Path.home()/'.claude/skills/image-assets')"
+npx skills add x0c/image-skills -g
 ```
 
-In Windows PowerShell, replace `python3` with `py -3`. For Codex, replace `.claude` with `.codex`. Restart your assistant.
+This installs the `image-assets` skill to every detected agent host. Restart your assistant.
 
-Installation stops if the destination already exists, preserving local changes. To upgrade or migrate from the old repository, back up your existing `image-assets` folder and move it outside the skill directory before copying. If you use agentsync, maintain its canonical skill source instead of replacing shared tool-side links.
+If you use agentsync, maintain its canonical skill source instead of replacing shared tool-side links.
 
 ## Usage and dependencies
 

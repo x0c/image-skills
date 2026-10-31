@@ -9,6 +9,7 @@
 **这是 [image-assets-skill](https://github.com/x0c/image-assets-skill) 的后续维护仓库。** 技能名称仍为 `image-assets`，位于 `image-assets/`。旧仓库仅作归档入口。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![skills.sh](https://skills.sh/b/x0c/image-skills)](https://skills.sh/x0c/image-skills)
 
 ## 能做什么
 
@@ -26,16 +27,15 @@ python3 image-assets/scripts/image_assets_cli.py app-transparent \
 
 ## 安装
 
-需要 Git 和 Python 3。在一个尚无 `image-skills` 文件夹的目录执行：
+需要 Node.js（装 `skills` CLI 用）和 Python 3（跑图像处理辅助脚本用）：
 
 ```sh
-git clone https://github.com/x0c/image-skills.git
-python3 -c "from pathlib import Path; import shutil; shutil.copytree('image-skills/image-assets', Path.home()/'.claude/skills/image-assets')"
+npx skills add x0c/image-skills -g
 ```
 
-Windows PowerShell 将 `python3` 换为 `py -3`。Codex 用户将命令中的 `.claude` 换为 `.codex`。重启助手。
+一次把 `image-assets` 技能装到所有已识别的助手宿主。重启助手。
 
-安装遇到目标目录已存在时会停止，避免覆盖自己的修改。升级或从旧仓库迁移时，先备份现有 `image-assets` 文件夹并将其移出技能目录，再执行复制。使用 agentsync 的用户应维护统一技能源，不要复制覆盖工具侧的共享链接。
+使用 agentsync 的用户应维护统一技能源，不要复制覆盖工具侧的共享链接。
 
 ## 用法和依赖
 
